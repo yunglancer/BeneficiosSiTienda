@@ -1,0 +1,1307 @@
+@font-face { 
+    font-family: "Open Sans"; 
+    src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFVZ0b.woff2)
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+}
+
+
+#header{
+    width: 100%;
+    height: 56px;
+    background: #262626;
+    display: flex;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contenedorcentralhead{
+    width: 87%;
+    margin: auto;
+    height: 56px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    background: #262626;
+    margin: 10px 0px;
+    margin-right: 10px;
+}
+
+.logo img{
+    border-radius: 8px;
+}
+
+header select{
+    width: 17%;
+    height: 34px;
+    border: 1x solid white;
+    color: white;
+    background: #262626;
+    display: flex;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: "Open Sans";
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.selectinput{
+    width: 69%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+.inputheader{
+    width: 80%;
+    height: 37px;
+    margin: 10px 0px;
+    background: #262626;
+    border: white 1px solid;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.inputheader::placeholder{
+    margin: auto;
+    color: #737373;
+    opacity: 1;
+}
+
+.inputheader:focus{
+    box-shadow: gray 2px;
+}
+
+
+.compraringresar{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.compraringresar a{
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 14px;
+    margin: 10px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.botoningresar{
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    font-family: "open sans";
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    border: 1px white solid;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.botoningresar span{
+    margin-left: 7px;
+}
+
+.iconoingresar{
+    width: 16px;
+    margin: auto;
+}
+
+.location{
+    width: 24px;
+    height: 24px;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    /*margin: 5px 3px;*/
+}
+
+
+.header2{
+    width: 100%;
+    height: 36px;
+    display: flex;
+    background: #f04141;
+    color: white;
+    font-family: "Open Sans";
+    justify-content: space-around;
+    
+}
+
+.header2centro{
+    width: 87%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header2centro div{
+    margin: 5px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header2centro div span, .header2centro div b{
+    font-size: 12px;
+}
+
+.text{
+    flex-direction: column;
+    width: 200px;
+    display: flex;
+    margin: 0px 0px;
+    padding: 0px;
+}
+
+.text b{
+    width: 40px;
+}
+
+.text span{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+}
+
+.linksheader2{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    align-content: center; 
+    padding: 15%;
+    font-size: 14px;
+
+}
+
+.linksheader2 {
+    margin-right: 400px;
+   }
+   
+
+
+.linksheader2 a{
+    color: white;
+    text-decoration: none;
+    margin: auto 10px;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background: #fafafa;
+}
+
+.slideprincipal{
+    width: 100%;
+    display: flex;
+}
+
+.slideprincipal img{
+    width: 100%;
+    height: 288px;
+}
+
+.botonescenter{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.botonesprincipales{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.espectaculos, .gastronomia, .boliches, .supermercados, .farmacias{
+    width: 18%;
+    height: 96px;
+    display: flex;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    Background-position: center center;
+    transition-duration: 0.3s;
+    transition: 0.3s;
+    bottom: 0px;
+}
+
+.espectaculos:hover, .gastronomia:hover, .boliches:hover, .supermercados:hover, .farmacias:hover{
+    box-shadow:  0 25px 50px -12px rgba(0,0,0,0.25);
+    bottom: 5px;
+    transition-duration: .3s;
+    transition: .3s;
+}
+
+.espectaculos span, .gastronomia span, .boliches span, .supermercados span, .farmacias span{
+    margin: auto;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight:700;
+    opacity: 0.9;
+}
+
+.hijo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(0,0,0, .3);
+    border-radius: 10px;
+}
+
+.espectaculos{
+    background-image: url(imagenes/espectaculos.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+}
+
+.gastronomia{
+    background-image: url(imagenes/gastronomia.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+}
+
+.boliches{
+    background-image: url(imagenes/boliches.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+}
+
+.supermercados{
+    background-image: url(imagenes/supermercados.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+}
+
+.farmacias{
+    background-image: url(imagenes/farmacias.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+}
+
+.descubri, .explora, .descuentos, .beneficiosxbanco{
+    width: 90%;
+    height: 64px;
+    background: #f04141;
+    display: flex;
+    margin: 80px auto;
+    border-radius: 5px;
+}
+
+.teesperan{
+    width: 90%;
+    height: 64px;
+    background: #f04141;
+    display: flex;
+    margin: 60px auto;
+    border-radius: 5px;
+}
+
+.teesperan {
+    margin-top: 30px;
+}
+   
+
+
+.descubri h3, .explora h3, .teesperan h3, .descuentos h3, .beneficiosxbanco h3{
+    margin: auto;
+    color: #ffffff;
+    width: auto;
+    height: auto;
+    font-size: 23px;
+}
+
+.contenedorprintarjetablack{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.contimagen img {
+    width: 224px;
+    height: 224px;
+    margin: 20px;
+}
+
+.textboton, .contimagen{
+    width: 50%;
+}
+
+.textboton{
+    padding:32px;
+}
+
+.textboton .tarjetasmadres, .textboton .blackfriday{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contenedortarjetasmadres, .contenedorblackfriday{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background: #ffffff;
+    margin: 0px 5px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+.ultimosmodelos p, .pcdeescritorio p{
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.ultimosmodelos, .pcdeescritorio{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contenedortarjetasmadres{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background: #ffffff;
+    margin: 0px 5px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+.botonvermas{
+    padding: 10px;
+    color: white;
+    background: #f04141;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.divisor{
+    width: 100%;
+    display: flex;
+}
+
+.wavedown{
+    width: 100%;
+}
+
+.waveup{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.informacion{
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion h3{
+    text-align: center;
+    font-size: 45px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.amdnotebook{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.amdryzen, .notebook{
+    width: 50%;
+    display: flex;
+    margin: 0px 5px;
+    flex-direction: column;
+}
+
+.amdryzen img, .notebook img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+    margin: 0px auto;
+}
+
+.amdryzen span, .notebook span{
+    font-size: 24px;
+    margin: 0px auto;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.amdryzen p, .notebook p{
+    font-size: 17px;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 20px;
+    width: 75%;
+}
+
+.amdryzen a, .notebook a{
+    font-weight: bold;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 20px; 
+    cursor: pointer;
+}
+
+
+.mejoresproductos{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.mejoresproductos1{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+.productos{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.productosx{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.producto{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.imagenytexto{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    transition: .5s;
+    transition-duration: .5s;
+    bottom: 0px;
+}
+
+.imagenytexto:hover{
+    box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);
+    bottom: 6px;
+    transition: .5s;
+    transition-duration: .5s;
+}
+
+.mejores{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.botonzoomgas {
+    display: flex;
+    width: 50%;
+    background: #f04141;
+    margin: 20px;
+    background-image: url(imagenes/gastronomia.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: 0.6s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botonzoomgas:hover, .botonzoomespe:hover, .botonzoomsupe:hover, .botonzoomboli:hover, .botonzoomfar:hover{
+    background-size: 120% 120%;
+}
+
+.botonzoomgas .hijo a span, .botonzoomespe .hijo a span, .botonzoomsupe .hijo a span .botonzoomboli .hijo a span,.botonzoomfar .hijo a span{
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.botonzoomgas .hijo a, .botonzoomespe .hijo a, .botonzoomsupe .hijo a, .botonzoomboli .hijo a, .botonzoomfar .hijo a{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;color: #ffffff;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.botonzoomespe{
+    display: flex;
+    width: 50%;
+    background: #f04141;
+    margin: 20px;
+    background-image: url(imagenes/espectaculos.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: 0.6s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botonzoomsupe{
+    display: flex;
+    width: 50%;
+    background: #f04141;
+    margin: 20px;
+    background-image: url(imagenes/supermercados.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: 0.6s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botonzoomboli{
+    display: flex;
+    width: 50%;
+    background: #f04141;
+    margin: 20px;
+    background-image: url(imagenes/boliches.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: 0.6s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botonzoomfar{
+    display: flex;
+    width: 50%;
+    background: #f04141;
+    margin: 20px;
+    background-image: url(imagenes/farmacias.jpg);
+    background-color: rgba(0,0,0, .5);
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: 0.6s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.producto1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+
+.mejores h4{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.productos1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.producto1 img{
+    width: 187px;
+    height: 144px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.producto1 span{
+    font-weight: bold;
+    color: #525252;
+    font-size: 16px;
+    padding: 20px 30px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.producto1 span:hover{
+    color: #f04141;
+}
+
+.estrellitas{
+    margin: auto;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.estrella{
+    width: 20px;
+    color: #fcd34d;
+}
+
+.estrellass{
+    width: 18px;
+    color: #fcd34d;
+}
+
+.descripcion{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #525252;
+    text-align: center;
+}
+
+.precio{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #525252;
+    margin-bottom: 20px;
+}
+
+.cantidadyboton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cantidad{
+    display: flex;
+    flex-direction: row;
+}
+
+.cantidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+}
+
+.masymenos{
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1.75rem;
+}
+
+.masymenos:hover{
+    color: #f04141;
+}
+
+.cantidad p{
+    margin: auto;
+}
+
+.button{
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+
+.button button{
+    width: 100%;
+    padding: 10px 20px;
+    background: #f04141;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    border-radius: 9999px;
+    font-size: 16px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background: #d91616;
+}
+
+.slidemedio{
+    width: 100%;
+    display: flex;
+}
+
+.slidemedio img{
+    width: 100%;
+    height: 288px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+.lasmejorestiendas{
+    display: flex;
+    width: 100%;
+}
+
+.pixcafemcbur{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.tienda{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    width: 25%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+    border-radius: 5px;
+}
+
+.headertienda{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.headertienda img{
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.logotienda{
+    width: 80%;
+    margin:auto;
+    display: flex;
+}
+
+.logotienda img{
+    width: 45%;
+    margin: auto;
+    box-shadow:  0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nombretienda{
+    display: flex;
+    text-align: center;
+}
+
+.nombretienda h4{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: normal;
+
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 56px;
+    justify-content: space-between;
+}
+
+.imagenes img{
+    margin: auto;
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(229,229,229, .9);
+    border-radius: 5px;
+}
+
+.imagenes a{
+    margin: auto;
+}
+
+.vertienda{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.vertienda a{
+    text-decoration: none;
+    color: #171717;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+
+.principaldescuentos, .contprinbancos{
+    width: 100%;
+    display: flex;
+}
+
+.contdescuentos{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.contbancodes{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.tiendadescuentos{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 30%;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.bancodes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 85%;
+    background: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.bancodescuento{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.logonombre{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+    color: #404040;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: #e5e5e5 1px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logonombre img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.logonombre p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iralatienda {
+    width: 75%;
+    flex-direction: column;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    align-content: center;
+    margin: auto 5px;
+}
+
+.porcentaje {
+    font-size: 36px;
+    color: #f04141;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.descuentotext {
+    font-size: 12px;
+    color: #f04141;
+    margin-right: 10px;
+}
+
+.botoniralatienda{
+    display: flex;
+    width: 100%;
+    align-content: flex-end;
+    justify-content: flex-end;
+    transition-duration: .5s;
+}
+
+.botoniralatienda button{
+    width: 80%;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    background: #fee2e2;
+    color: #dc2626;
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+    border-radius: 9999px;
+    transition-duration: .5s;
+}
+
+
+.botoniralatienda button:hover{
+    background: #f04141;
+    color:#ffffff ;
+}
+
+.santander{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    border-left: #e5e5e5 1px solid;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.santander img{
+    margin:auto;
+    width: 50%;
+    margin-bottom: 2.5px;
+}
+
+.santander p{
+    margin: auto;
+    text-align: center;
+    color: rgba(64,64,64);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2.5px;
+}
+
+.logonombre2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    color: #404040;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: #e5e5e5 1px solid;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.logonombre2 img {
+    width: 45%;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 10px;  
+}
+
+.iralatienda2 {
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    align-content: center;
+    margin: auto 5px;
+}
+
+.bancodescuentos {
+    width: 80%;
+    flex-direction: row;
+    display: flex;
+    margin: auto;
+}
+
+.masproductos{
+    width: 100%;
+    text-align: center;
+    margin: 75px auto;
+    font-size: 24px;
+    color: #737373;
+    font-weight: bold;
+}
+
+
+.intel{
+    display: flex;
+    width: 100%;
+    margin-top: 75px;
+    background: #ffffff;
+}
+
+.intel {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+   
+
+.intelprincipal{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.inteltexto{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+.inteltexto img{
+    margin: auto;
+    width: 170px;
+}
+
+.inteltexto h4{
+    font-size: 48px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inteltexto p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.intelpromo{
+    display: flex;
+    width: 40%;
+    margin:auto;
+}
+
+.intelpromo img{
+    width: 100%;
+    margin: auto;
+}
+
+.contenedorfooter{
+    width: 100%;
+    display: flex;
+}
+
+.continfo{
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.info{
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    margin: auto;
+}
+
+.contenedorinfo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contenedorinfo img{
+    width: 80px;
+    height: 80px;
+    margin:auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.contenedorinfo h4{
+    font-size: 20px;
+    color: #171717;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.contenedorinfo p{
+    font-size: 14px;
+    color: #171717;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background: #262626;
+    color: #ffffff;
+}
+
+.footer{
+    margin: auto;
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.logobeneficiossi{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.logobeneficiossi img{
+    width: 48px;
+    border-radius: 8px;
+}
+
+.logobeneficiossi p{
+    margin: auto;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.linksfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.linksfooter h2{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.linksfooter a{
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    transition-duration: .5s;
+    transition: .5s;
+}
+
+.linksfooter a:hover{
+    color: #f04141;
+    transition-duration: .5s;
+    transition: .5s;
+}
+
+.links1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.c{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+}
+
+.c span{
+    color: #f04141;
+}
+
+.c p{
+    margin: 5px;
+    margin-top: 15px;
+}
